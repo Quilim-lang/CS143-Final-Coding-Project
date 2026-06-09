@@ -136,11 +136,11 @@ public class Main {
 			sc.nextLine();
 			return sc.nextLine();
 		}
-		public static boolean promptIsFirstGenImmigrant(Scanner sc) {
+		public static boolean promptIsFirstGen(Scanner sc) {
 			System.out.print("Are you a First Generation College Student? true or false: ");
 			return sc.nextBoolean();
 		}
-		public static boolean promptisWashingtonResident(Scanner sc);{
+		public static boolean promptisWashingtonResident(Scanner sc) {
 			System.out.print("Are you a Washington Resident? true or false: ");
 			return sc.nextBoolean();
 		}
