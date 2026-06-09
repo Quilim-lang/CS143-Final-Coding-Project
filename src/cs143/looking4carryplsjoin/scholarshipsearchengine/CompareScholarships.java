@@ -12,7 +12,7 @@ public class CompareScholarships {
 		scholarships.add(new BusinessScholarship());
 		scholarships.add(new EverettScholarship());
 		scholarships.add(new LynnwoodScholarship());
-		scholarships.add(new MulkiteoScholarship());
+		scholarships.add(new MukilteoScholarship());
 		scholarships.add(new NursingScholarship());
 		scholarships.add(new WashingtonScholarship());
 		scholarships.add(new WomenInStemScholarship());
