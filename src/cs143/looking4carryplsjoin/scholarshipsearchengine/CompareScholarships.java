@@ -3,10 +3,19 @@ import java.util.ArrayList;
 import java.util.List;
 public class CompareScholarships {
 	//private fields
-	ArrayList<Scholarship> scholarships = new ArrayList<Scholarship>(List.of(new MicrosoftScholarship())); //option 1: initialize immediately
+	ArrayList<Scholarship> scholarships = new ArrayList<Scholarship>(); //option 1: initialize immediately
 	
 	private void fillScholarships() {
-		scholarships.add(new MicrosoftScholarship()); //option 2: use private method to fill arraylist
+		scholarships.add(new MicrosoftScholarship());
+		scholarships.add(new AfricanAmericanScholarship());
+		scholarships.add(new AsianAmericanScholarship());
+		scholarships.add(new BusinessScholarship());
+		scholarships.add(new EverettScholarship());
+		scholarships.add(new LynnwoodScholarship());
+		scholarships.add(new MulkiteoScholarship());
+		scholarships.add(new NursingScholarship());
+		scholarships.add(new WashingtonScholarship());
+		scholarships.add(new WomenInStemScholarship());
 	}
 	
     //Remove scholarship from list if:
@@ -16,6 +25,7 @@ public class CompareScholarships {
     //if user is not WA resident and scholarship requires WA residence
     //if user is first gen and scholarship requires not first gen
     public ArrayList<Scholarship> returnEligible(User user) {
+		fillScholarships();
         for (Scholarship ss : scholarships) {
             if (user.getGPA() <= ss.getGPA()) {
                 scholarships.remove(ss);
