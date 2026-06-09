@@ -35,7 +35,7 @@ public class CompareScholarships {
             else if ((user.getIsWashingtonResident() == false) && (ss.getIsWashingtonResident() == true)) {
                 scholarships.remove(ss);
             }
-            else if ((user.getIsFirstGenImmigrant() == true) && (ss.getIsFirstGenImmigrant() == false)) {
+            else if ((user.getIsFirstGen() == true) && (ss.getIsFirstGen() == false)) {
                 scholarships.remove(ss);
             }
         }
