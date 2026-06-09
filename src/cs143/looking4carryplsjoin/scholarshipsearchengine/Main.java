@@ -42,7 +42,7 @@ public class Main {
 			user.setMajor(major);
 			isFirstGen = promptIsFirstGen(sc);
 			user.setIsFirstGen(isFirstGen);
-			scholarshipAmount = isWashingtonResident(sc);
+			isWashingtonResident = promptIsWashingtonResident(sc);
 			user.setIsWashingtonResident(isWashingtonResident);
 			
 
@@ -103,16 +103,13 @@ public class Main {
 		default:
 			return "other";
 		}
-	//For Kevin
-	//public static String promptGender();
-	//public static Double promptIncome();
-	//public static String promptMajor();
-	//public static boolean promptIsFirstGen();
-	//public static boolean prompt isWashingtonResident();
+		}
+	
 				public static String promptGender(Scanner sc) {
 			System.out.println("Select Gender");
 			System.out.println("1. Male");
 			System.out.println("2. Female");
+			
 			System.out.print("Choice: ");
 			
 			int choice = sc.nextInt();
@@ -140,12 +137,11 @@ public class Main {
 			System.out.print("Are you a First Generation College Student? true or false: ");
 			return sc.nextBoolean();
 		}
-		public static boolean promptisWashingtonResident(Scanner sc) {
+		public static boolean promptIsWashingtonResident(Scanner sc) {
 			System.out.print("Are you a Washington Resident? true or false: ");
 			return sc.nextBoolean();
 		}
-	}
-}
+	
+
 
 	}
-}
