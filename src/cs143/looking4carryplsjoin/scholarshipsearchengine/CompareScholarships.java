@@ -20,22 +20,22 @@ public class CompareScholarships {
             if (user.getGPA() <= ss.getGPA()) {
                 scholarships.remove(ss);
             }
-            if (user.getIncome() >= ss.getIncome()) {
+            else if (user.getIncome() >= ss.getIncome()) {
                 scholarships.remove(ss);
             }
-            if ((!ss.getRace().toLowerCase().equals("any")) && (!ss.getRace().toLowerCase().equals(user.getRace()))) {
+            else if ((!ss.getRace().toLowerCase().equals("any")) && (!ss.getRace().toLowerCase().equals(user.getRace()))) {
                 scholarships.remove(ss);
             }
-            if ((!ss.getGender().toLowerCase().equals("any")) && (!ss.getGender().toLowerCase().equals(user.getGender()))) {
+            else if ((!ss.getGender().toLowerCase().equals("any")) && (!ss.getGender().toLowerCase().equals(user.getGender()))) {
                 scholarships.remove(ss);
             }
-            if ((!ss.getMajor().toLowerCase().equals("any")) && (!ss.getMajor().toLowerCase().equals(user.getMajor()))) {
+            else if ((!ss.getMajor().toLowerCase().equals("any")) && (!ss.getMajor().toLowerCase().equals(user.getMajor()))) {
                 scholarships.remove(ss);
             }
-            if ((user.getIsWashingtonResident() == false) && (ss.getIsWashingtonResident() == true)) {
+            else if ((user.getIsWashingtonResident() == false) && (ss.getIsWashingtonResident() == true)) {
                 scholarships.remove(ss);
             }
-            if ((user.getIsFirstGenImmigrant() == true) && (ss.getIsFirstGenImmigrant() == false)) {
+            else if ((user.getIsFirstGenImmigrant() == true) && (ss.getIsFirstGenImmigrant() == false)) {
                 scholarships.remove(ss);
             }
         }
