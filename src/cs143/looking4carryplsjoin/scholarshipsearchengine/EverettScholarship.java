@@ -1,8 +1,8 @@
 package cs143.looking4carryplsjoin.scholarshipsearchengine;
 
 public class EverettScholarShip extends Scholarship {
-	EverettScholarShip(){
-		super("EverettScholarShip", 2.6, "Any", "Any", 95000, "Any", false, true, 2500);
+	EverettScholarship(){
+		super("EverettScholarship", 2.6, "Any", "Any", 95000, "Any", false, true, 2500);
 
 	}
 	@Override
